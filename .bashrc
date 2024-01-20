@@ -192,5 +192,6 @@ install() {
   get_tools
 }
 
+install
 cl
 server_info
