@@ -99,7 +99,11 @@ get_tools() {
     echo "done setting up btop"
   fi
 
-  export PATH="$tools_dir:$PATH"
+  # Add tools directory to PATH if not already present
+  if [[ ":$PATH:" != *":$tools_dir:"* ]]; then
+    echo "export PATH=\$PATH:$tools_dir" >> "$HOME/.bashrc"
+    source "$HOME/.bashrc"
+  fi
 }
 
 update_tools() {
