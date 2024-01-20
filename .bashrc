@@ -118,6 +118,13 @@ update_tools() {
   get_tools
 }
 
+update() {
+  update_dotfiles
+  update_tools
+  update_vim_plug
+  cl
+}
+
 tmux() {
   "$HOME/.tools/tmux" "$@"
 }
@@ -192,12 +199,7 @@ server_info() {
 cl() {
   clear
   fastfetch
-}
-
-update() {
-  update_dotfiles
-  update_tools
-  update_vim_plug
+  server_info
 }
 
 update_dotfiles
