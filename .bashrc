@@ -1,5 +1,3 @@
-# source /usr/local/lib/config/Bash_Profile
-
 update_dotfiles() {
   local repo_dir="$HOME/.dotfiles"
   local repo_url="https://github.com/0mega24/se-dotfiles.git"
@@ -192,11 +190,7 @@ install() {
   get_tools
 }
 
-start() {
-  update_dotfiles
-  tmux
-  cl
-  server_info
-}
-
-start
+update_dotfiles
+get_tools
+cl
+server_info
