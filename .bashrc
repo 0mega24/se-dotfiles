@@ -194,8 +194,15 @@ cl() {
   fastfetch
 }
 
+update() {
+  update_dotfiles
+  update_tools
+  update_vim_plug
+}
+
 update_dotfiles
 get_tools
+install_vim_plug
 export PATH="$HOME/.tools:$PATH"
 cl
 server_info
