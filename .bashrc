@@ -186,6 +186,6 @@ cl() {
 }
 
 update_dotfiles
-get_tools
+# get_tools
 cl
 server_info
