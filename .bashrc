@@ -39,6 +39,8 @@ update_dotfiles() {
       echo "dotfiles .vimrc not found. Symlink not created."
     fi
   fi
+
+  export PATH="$HOME/.tools:$PATH"
 }
 
 install_vim_plug() {
@@ -49,6 +51,8 @@ install_vim_plug() {
     mkdir "$HOME/.vim/autoload"
     curl -L https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -o "$HOME/.vim/autoload/plug.vim"
   fi
+
+  export PATH="$HOME/.tools:$PATH"
 }
 
 update_vim_plug() {
@@ -111,6 +115,8 @@ get_tools() {
 
     echo "done setting up btop"
   fi
+
+  export PATH="$HOME/.tools:$PATH"
 }
 
 update_tools() {
@@ -205,5 +211,4 @@ cl() {
 update_dotfiles
 get_tools
 install_vim_plug
-export PATH="$HOME/.tools:$PATH"
 cl
