@@ -190,7 +190,11 @@ cl() {
 install() {
   update_dotfiles
   get_tools
+}
 
+update() {
+  update_dotfiles
+  update_tools
 }
 
 install
