@@ -185,11 +185,6 @@ cl() {
   fastfetch
 }
 
-install() {
-  update_dotfiles
-  get_tools
-}
-
 update_dotfiles
 get_tools
 cl
