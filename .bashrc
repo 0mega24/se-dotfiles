@@ -104,11 +104,11 @@ update_tools() {
 }
 
 tmux() {
-  "$HOME/.tools/tmux/tmux.appimage"
+  "$HOME/.tools/tmux"
 }
 
 neovim() {
-  "$HOME/.tools/neovim/nvim.appimage"
+  "$HOME/.tools/neovim"
 }
 
 extract() {
