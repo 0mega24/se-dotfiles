@@ -42,13 +42,18 @@ update_dotfiles() {
 }
 
 install_vim_plug() {
-  if [ ! -d $HOME/.vim ]; then
+  if [ ! -d $HOME/.vim/autoload/plug.vim ]; then
     echo "vim plugin folder not located | Installing now..."
 
     mkdir "$HOME/.vim"
     mkdir "$HOME/.vim/autoload"
     curl -L https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -o "$HOME/.vim/autoload/plug.vim"
   fi
+}
+
+update_vim_plug() {
+  rm -rf "$HOME/.vim/autoload/plug.vim"
+  install_vim_plug
 }
 
 get_tools() {
