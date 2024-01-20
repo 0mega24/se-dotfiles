@@ -207,4 +207,3 @@ get_tools
 install_vim_plug
 export PATH="$HOME/.tools:$PATH"
 cl
-server_info
