@@ -192,6 +192,11 @@ install() {
   get_tools
 }
 
-install
-cl
-server_info
+start() {
+  update_dotfiles
+  tmux
+  cl
+  server_info
+}
+
+start
