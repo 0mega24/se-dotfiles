@@ -189,5 +189,6 @@ install() {
 
 }
 
+install
 cl
 server_info
