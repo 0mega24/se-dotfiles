@@ -102,6 +102,11 @@ get_tools() {
   export PATH="$tools_dir:$PATH"
 }
 
+update_tools() {
+  rm -rf "$HOME/.tools"
+  get_tools
+}
+
 tmux() {
   tmux.appimage
 }
