@@ -104,11 +104,11 @@ update_tools() {
 }
 
 tmux() {
-  "$HOME/.tools/tmux" "$@"
+  "$HOME/.tools/tmux" && "$@"
 }
 
 neovim() {
-  "$HOME/.tools/neovim" "$@"
+  "$HOME/.tools/neovim" && "$@"
 }
 
 extract() {
