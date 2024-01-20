@@ -41,6 +41,16 @@ update_dotfiles() {
   fi
 }
 
+install_vim_plug() {
+  if [ ! -d $HOME/.vim ]; then
+    echo "vim plugin folder not located | Installing now..."
+
+    mkdir "$HOME/.vim"
+    mkdir "$HOME/.vim/autoload"
+    wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim "$HOME/.vim/autoload/plug.vim"
+  fi
+}
+
 get_tools() {
   local tmux_url="https://github.com/nelsonenzo/tmux-appimage/releases/download/3.3a/tmux.appimage"
   local neovim_url="https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage"
