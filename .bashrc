@@ -192,11 +192,6 @@ install() {
   get_tools
 }
 
-update() {
-  update_dotfiles
-  update_tools
-}
-
 install
 cl
 server_info
