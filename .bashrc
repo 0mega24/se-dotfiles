@@ -135,6 +135,10 @@ tmux() {
   "$HOME/.tools/tmux" "$@"
 }
 
+set_tmux_settings() {
+  tmux set -g mouse on
+}
+
 neovim() {
   "$HOME/.tools/neovim" "$@"
 }
